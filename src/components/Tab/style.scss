@@ -1,0 +1,42 @@
+.l_container {
+  display: block;
+}
+
+.l_container__views {
+  width: 100%;
+  height: calc(100vh - 104px);
+  overflow-x: hidden;
+}
+
+.l_container__views_padding {
+  padding: 20px 32px 0px;
+}
+
+@media screen and (min-width: 1000px) {
+  .l_container {
+    display: flex;
+  }
+
+  .l_container__views {
+    width: calc(100% - 250px);
+    height: calc(100vh - 64px);
+  }
+
+  .l_container__views_padding {
+    padding: 25px 25px 0px 70px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .l_container {
+    display: flex;
+  }
+
+  .l_container__views {
+    width: calc(100% - 408px);
+  }
+
+  .l_container__views_padding {
+    padding: 50px 96px 0px 150px;
+  }
+}

@@ -1,0 +1,29 @@
+.l_footer {
+  display: block;
+  height: 75px;
+  line-height: 75px;
+  margin-top: 25px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  color: #A3ABCC;
+  &::before {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #E4E8F7;
+    margin-top: 15px;
+  }
+  & > p {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .l_footer {
+    display: none;
+  }
+}

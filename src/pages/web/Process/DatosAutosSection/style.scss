@@ -1,0 +1,225 @@
+.p_datos_auto__title {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  letter-spacing: -0.6px;
+  color: #494F66;
+  & span {
+    color: #EF3340;
+  }
+}
+
+.p_datos_auto__subtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #676F8F;
+  margin-top: 10px;
+}
+
+.p_datos_auto__content_gas {
+  border-bottom: 1px solid #E4E8F7;
+  margin-bottom: 30px;
+  & p {
+    font-family: Lato;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    color: #494F66;
+    padding-left: 12px;
+  }
+  & .p_datos_auto__have_gas {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 15px 0 30px;
+  }
+}
+
+.p_datos_auto__content {
+  margin-top: 32px;
+}
+
+.p_datos_auto__content_form {
+  width: 100%;
+}
+
+.p_datos_auto__content_help {
+  width: 5 0%;
+}
+
+.p_datos_auto__ad_mobile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #F7F8FC;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 24px;
+  margin-bottom: 30px;
+  & img {
+    padding-right: 16px;
+  }
+  & .p_datos_auto__ad_info {
+    & span {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      color: #676F8F;
+    }
+    & p {
+      font-family: Lato;
+      font-weight: bold;
+      font-size: 10px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #6F7DFF;
+    }
+  }
+}
+
+.p_datos_auto__sum_sure {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  margin: 10px 0 40px;
+  & .p_datos_auto__sum_info {
+    & span {
+      display: inline-block;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #494F66;
+      margin-bottom: 7px;
+    }
+    & p {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      color: #676F8F;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.p_datos_auto__footer_step {
+  height: 75px;
+  line-height: 75px;
+  margin-top: 25px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  color: #A3ABCC;
+  &::before {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #E4E8F7;
+    margin-top: 15px;
+    transform: scale(1.06);
+  }
+}
+.p_datos_auto__ad_desktop {
+  display: none;
+}
+
+
+@media screen and (min-width: 1000px) {
+  .p_datos_auto__footer_step,
+  .p_datos_auto__ad_mobile {
+    display: none;
+  }
+
+  .p_datos_auto__content {
+    margin-top: 32px;
+    width: 384px;
+  }
+  
+  .p_datos_auto__wrapper {
+    display: flex;
+    & .p_datos_auto__ad_desktop {
+      display: block;
+      width: calc(100% - 450px);
+      margin-top: 32px;
+      max-width: 224px;
+      & > p {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        color: #494F66;
+        &::after {
+          content: "";
+          display: block;
+          border-bottom: 1px solid #E4E8F7;
+          margin-top: 20px;
+        }
+      }
+      & > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 16px;
+        & span {
+          display: inline-block;
+          font-family: Lato;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.2px;
+          color: #494F66;
+          margin-bottom: 15px;
+        }
+        & p {
+          font-family: Lato;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 10px;
+          line-height: 16px;
+          letter-spacing: 0.8px;
+          color: #6F7DFF;
+        }
+      }
+    }
+    .p_datos_auto__content {
+      margin-right: 64px;
+    }
+  }
+  .p_datos_auto__content_gas {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    justify-content: space-between;
+    padding: 50px 0px;
+    & .p_datos_auto__have_gas {
+      margin: 0px;
+    }
+  }
+  
+  .p_datos_auto__sum_sure {
+    display: flex;
+    justify-content: space-between;
+    & .p_datos_auto__sum_info {
+      width: 200px;
+      & span {
+        margin-bottom: 0px;
+      }
+    }
+    & .p_datos_auto_calc {
+      width: calc(100% - 220px);
+    }
+  }
+}

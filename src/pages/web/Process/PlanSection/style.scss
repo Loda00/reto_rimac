@@ -1,0 +1,238 @@
+.p_plan__my_coverage {
+  background: #F7F8FC;;
+  padding: 40px 32px 58px;
+  & > h2 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.6px;
+    color: #494F66;
+  }
+  & > p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #676F8F;
+  }
+}
+
+.p_plan__card_coverage {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border-radius: 12px;
+  height: 148px;
+  margin-top: 24px;
+  & > .p_plan__card_coverage_info {
+    padding: 24px;
+    & > .p_plan__card_placa {
+      font-family: Roboto;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 28px;
+      letter-spacing: 0.2px;
+      color: #A3ABCC;
+    }
+    & > .p_plan__card_car {
+      font-family: Lato;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color: #494F66;
+    }
+    & > .p_plan__card_edit {
+      font-family: Lato;
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 16px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #6F7DFF;
+      margin-top: 16px;
+      cursor: pointer;
+    }
+  }
+  &  img {
+    top: -10px;
+    position: relative;
+  }
+}
+
+.p_plan__detail_coverage {
+  & > h2 {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 28px;
+    color: #494F66;
+    padding: 56px 32px 40px;
+  }
+}
+
+.p_plan__detail_content_coverage {
+  padding: 20px 30px 0px 0px;
+  & p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #676F8F;
+  }
+}
+
+.p_plan__come_back {
+  display: none;
+}
+
+.p_plan__want {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 16px 32px;
+  & .p_plan__want_price {
+    padding-right: 30px;
+    & p {
+      font-family: Lato;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.2px;
+      color: #494F66;
+    }
+    & span {
+      font-family: Lato;
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 16px;
+      letter-spacing: 0.8px;
+      color: #494F66;
+    }
+    & img {
+      display: none;
+    }
+  }
+  & > p {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .p_plan {
+    display: flex;
+  }
+
+  .p_plan__coverage {
+    max-width: 390px;
+    margin-left: 30px;
+  }
+
+  .p_plan__my_coverage {
+    background: white;
+    padding: 40px 0px 58px;
+  }
+  
+  .p_plan__card_coverage {
+    border: 3px solid #F0F2FA;
+    border-radius: 12px;
+    width: 100%;
+    height: 188px;
+    & > .p_plan__card_coverage_info {
+      padding: 40px 32px;
+    }
+  }
+
+  .p_plan__come_back {
+    display: flex;
+    max-width: 80px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+    cursor: pointer;
+    & span {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      color: #A3ABCC;
+    }
+  }
+
+  .p_plan__want {
+    display: block;
+    padding: 0;
+    width: 224px;
+    margin-left: 30px;
+    margin-top: 155px;
+    & .p_plan__want_price {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 0px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #E4E8F7;
+      & > div {
+        padding-top: 8px;
+        width: 100px;
+        & p {
+          font-family: Lato;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 32px;
+          letter-spacing: -0.2px;
+          color: #494F66;
+        }
+        & span {
+          font-family: Lato;
+          font-weight: bold;
+          font-size: 10px;
+          line-height: 16px;
+          letter-spacing: 0.8px;
+          color: #494F66;
+        }
+      }
+      & img {
+        display: block;
+        width: 64px;
+        height: 66px;
+      }
+    }
+    & p {
+      display: block;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color: #494F66;
+      padding: 3px 0px;
+      & > img {
+        padding-right: 15px;
+      }
+    }
+    & .p_plan__want_include {
+      font-size: 16px;
+      margin: 24px 0px 12px;
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .p_plan__want {
+    margin-left: 70px;
+  }
+
+  .p_plan__coverage {
+    max-width: 390px;
+    margin-left: 90px;
+  }
+}

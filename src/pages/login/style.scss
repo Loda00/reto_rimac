@@ -1,0 +1,125 @@
+.p_login {
+  display: block;
+}
+
+.p_login_header {
+  background-color: #F7F8FC;
+  & > .l_header {
+    border-bottom: none;
+  }
+}
+
+.p_login_header_ads {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 32px;
+  & > picture {
+    transform: translateY(30px);
+  }
+}
+
+.p_login_header_text {
+  font-family: Lato;
+  margin-top: 80px;
+  & > h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #494F66;
+  }
+  & > h1 {
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    letter-spacing: -0.6px;
+    color: #494F66;
+    & > span {
+      color: #EF3340;
+    }
+  }
+  & > p {
+    margin-top: 14px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #676F8F;
+  }
+}
+
+.p_login_body {
+  padding: 0px 32px;
+  width: 100%;
+  & > .p_login_form {
+    & > h2 {
+      margin-top: 40px;
+      margin-bottom: 24px;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.2px;
+      color: #494F66;
+    }
+  }
+}
+
+.p_login_form_check {
+  display: flex;
+  & > p {
+    margin-left: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #676F8F;
+    & a:any-link {
+      color: #676F8F;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .p_login {
+    display: flex;
+    height: 100vh;
+  }
+  .p_login_header {
+    display: block;
+    background: url('../../assets/img/background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 550px;
+  }
+  .p_login_header_ads{ 
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-left: 0px;
+    margin-top: 110px;
+  }
+  .p_login_header_text {
+    width: 300px;
+    & > h1 {
+      font-size: 36px;
+    }
+    & > h3 {
+      font-size: 12px;
+    }
+  }
+  .p_login_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 550px);
+    & > .p_login_form {
+      max-width: 300px;
+    }
+  }
+}

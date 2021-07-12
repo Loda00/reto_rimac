@@ -1,0 +1,80 @@
+.c_check_slide {
+  width: 100%;
+  padding: 0px;
+
+  input {
+    display: none;
+  }
+
+  label {
+    cursor: pointer;
+    padding-right: 35px;
+    position: relative;
+    display: block;
+    font-size: 18px;
+    padding: 16px 0;
+    font-family: Lato;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    color: #494F66;
+    user-select: none;
+  }
+
+  input[type="checkbox"], input[type="radio"] {
+    position: absolute; 
+    visibility: hidden !important;
+  }
+
+  input[type="checkbox"] + label, input[type="radio"] + label {
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      margin-top: -7.5px;
+      box-sizing: border-box;
+      transform: translateY(-6px);
+    }
+
+    &:before {
+
+      width: 50px;
+      height: 28px;
+      right: 0px;
+      background: #E4E8F7;
+      border: 1px solid #E4E8F7;
+      border-radius: 15px;
+    }
+
+    &:after {
+      width: 25.5px;
+      height: 25.5px;
+      right: 23px;
+      background: white;
+      border-radius: 50%;
+      transition: all 200ms ease-out;
+    }
+  }
+
+  input[type="checkbox"]:checked + label, input[type="radio"]:checked + label {
+
+    &:after {
+      right: 0px;
+      background: white;
+    }
+    &::before {
+      background: #7CC954;
+    }
+  }
+}
+
+.c_check_slide__hide {
+  display: block;
+}
+
+@media screen and (min-width: 1000px){
+  .c_check_slide__hide {
+    display: none;
+  }
+}
