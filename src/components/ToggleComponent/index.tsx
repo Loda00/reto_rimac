@@ -18,7 +18,7 @@ interface IProps {
 const ToggleComponent:FC<IProps> = ({
   children, name, checked, label, onChange, photo
 }) => {
-  const [show, setShow] = useState<boolean>(true)
+  const [show, setShow] = useState<boolean>(false)
   const id = Math.floor(Math.random() * 1000000000);
 
   return (
